@@ -4,7 +4,7 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+
 :root {
 
 }
@@ -15,6 +15,7 @@
 }
 
 .nav-bar li {
+    font-family: "DM Mono";
     list-style-type: none;
     display: inline;
 }
@@ -23,4 +24,10 @@ a:link, a:visited {
     color: var(--header-primary);
     text-align: center;
     text-decoration: none;
+}
+
+.quote_container {
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
 }

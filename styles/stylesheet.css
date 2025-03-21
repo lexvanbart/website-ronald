@@ -81,9 +81,7 @@ body {
     padding: 5%;
 }
 
-.hero-container {
-    display: flex;
-}
+
 .hero-quote {
     position: absolute;
     top: 15%;
@@ -136,5 +134,5 @@ nav {
 
 .nav-ext-ww-fb img {
     width: 10rem;
-    padding: 2rem;
+    padding: 1rem 2rem;
 }

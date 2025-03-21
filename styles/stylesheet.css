@@ -1,12 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Syne+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Glass+Antiqua&family=Syne+Mono&display=swap');
+
 .syne-mono-regular {
     font-family: "Syne Mono", monospace;
     font-weight: 400;
     font-style: normal;
   }
 
-:root {
+  .dm-mono-light {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .dm-mono-regular {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-mono-medium {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .dm-mono-light-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .dm-mono-regular-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .dm-mono-medium-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .glass-antiqua-regular {
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
+/*----------------------------------------*/  
+
+:root {
+    --nav-bg: rgb(230, 230, 230);
+    --nav-a: rgb(40, 50, 45);
+    --nav-a-active: rgb(106, 112, 105);
 }
 
 * {
@@ -14,20 +62,79 @@
     padding: 0;
 }
 
-.nav-bar li {
-    font-family: "DM Mono";
-    list-style-type: none;
-    display: inline;
+/*----------------------------------------*/ 
+
+body {
+    font-size: 1.25rem;
+    background-image: url("../assets/pictures/Hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    gap: 2rem;
 }
 
-a:link, a:visited {
-    color: var(--header-primary);
+.header-main-title {
+    font-family: "Glass Antiqua", cursive;
+    font-size: 3.2rem;
+    padding: 5%;
+}
+
+.hero-container {
+    display: flex;
+}
+.hero-quote {
+    position: absolute;
+    top: 15%;
+    left: 19%;
+    width: 23rem;
+    font-family: "Syne Mono", monospace;
     text-align: center;
+    font-size: 1.3rem;
+}
+
+nav {
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    max-height: 100svh;
+    background-color: var(--nav-bg);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    gap: 1.5rem;
+    padding-block: 2rem;
+
+    padding: 1rem 2rem;
+
+    font-family: "DM mono", monospace;
+    font-size: 1.5rem;
+}
+
+.nav-list a {
+    color: var(--nav-a);
     text-decoration: none;
 }
 
-.quote_container {
-    font-family: "Syne Mono", monospace;
-    font-weight: 400;
-    font-style: italic;
+.nav-list a:visited {
+    color: var(--nav-a);
+}
+
+.nav-list a:hover, a:focus {
+    color: var(--nav-a-active);
+}
+
+.nav-list a:active {
+    color: var(--nav-a-active);
+}
+
+.nav-ext-ww-fb img {
+    width: 10rem;
+    padding: 2rem;
 }
